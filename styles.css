@@ -40,6 +40,7 @@ body {
 
   .main {
     flex-direction: row;
+    align-items: center;
     padding: 3em;
   }
 

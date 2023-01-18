@@ -2,7 +2,7 @@
 
 ![Desktop design](/design/desktop-design.png)
 
-## [Live]() | [Solution]() | [Challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
+## [Live](https://tomasmansilla.github.io/huddle-landing-page-with-single-introductory-section-master/) | [Solution]() | [Challenge](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
 
 This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -33,6 +33,8 @@ Users should be able to:
 
 - Desktop Design:
   ![desktop-design](/design/desktop-design.png "desktop design")
+- Mobile Design:
+  ![mobile-design](/design/mobile-design.png "mobile design")
 
 ## My process
 
