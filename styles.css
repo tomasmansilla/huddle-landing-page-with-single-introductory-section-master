@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  box-sizing: border-box;
+
+  --color-primary: hsl(257, 40%, 49%);
+  --color-secondary: hsl(300, 69%, 71%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-primary);
+  background-image: url(./images/bg-mobile.svg);
+  background-size: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+  }
+
+  .main {
+    flex-direction: row;
+    padding: 3em;
+  }
+
+  .media {
+    max-width: 50%;
+  }
+}
+
+/* media */
+img {
+  width: 100%;
+  display: block;
+}
+
+.hero {
+  max-width: 8em;
+  margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 50em) {
+  .hero {
+    max-width: 12em;
+  }
+}
+
+.media__img {
+  margin-bottom: 2em;
+}
+
+/* content */
+.content {
+  text-align: center;
+}
+
+@media screen and (min-width: 50em) {
+  .content {
+    text-align: left;
+    max-width: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+.content > p {
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  min-width: 17.5em;
+  max-width: 20em;
+  padding: 1.1em;
+  border-radius: 2em;
+  border: none;
+  background-color: #fff;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 1px #333;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+@media screen and (min-width: 35em) {
+  .btn {
+    font-size: 0.8rem;
+    margin-top: 1em;
+  }
+}
+
+/* contact info */
+.contact-info {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+@media screen and (min-width: 50em) {
+  .contact-info {
+    position: absolute;
+    right: 2.5em;
+    bottom: 1em;
+    font-size: 1.5rem;
+  }
+}
+
+.contact-info > a {
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.contact-info > * + * {
+  margin-left: 1em;
+}
+
+.contact-info > a:hover {
+  color: var(--color-secondary);
+}
